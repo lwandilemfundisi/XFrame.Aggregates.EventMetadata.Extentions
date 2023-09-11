@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <PackageId>XFrame.Aggregates.EventMetadata.Extentions</PackageId>
+	  <Version>7.0.0</Version>
+	  <Authors>Lwandile Mfundisi</Authors>
+	  <Description>XFrame.Aggregates.EventMetadata.Extentions houses concept of metadata extensions</Description>
+	  <IsPackable>true</IsPackable>
+	  <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="XFrame.Aggregates" Version="7.0.3" />
+		<PackageReference Include="XFrame.DomainContainers" Version="7.0.0" />
+	</ItemGroup>
+
+	<Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+		<ItemGroup>
+			<BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+		</ItemGroup>
+	</Target>
+
+</Project>
