@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
 	  <PackageId>XFrame.Aggregates.EventMetadata.Extentions</PackageId>
-	  <Version>7.0.0</Version>
+	  <Version>7.0.1</Version>
 	  <Authors>Lwandile Mfundisi</Authors>
 	  <Description>XFrame.Aggregates.EventMetadata.Extentions houses concept of metadata extensions</Description>
 	  <IsPackable>true</IsPackable>
@@ -13,7 +13,7 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="XFrame.Aggregates" Version="7.0.3" />
+		<PackageReference Include="XFrame.Aggregates" Version="7.0.4" />
 		<PackageReference Include="XFrame.DomainContainers" Version="7.0.0" />
 	</ItemGroup>
 
