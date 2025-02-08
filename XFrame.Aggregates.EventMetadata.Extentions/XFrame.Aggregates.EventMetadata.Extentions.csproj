@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
 	  <PackageId>XFrame.Aggregates.EventMetadata.Extentions</PackageId>
-	  <Version>7.0.1</Version>
+	  <Version>9.0.0</Version>
 	  <Authors>Lwandile Mfundisi</Authors>
 	  <Description>XFrame.Aggregates.EventMetadata.Extentions houses concept of metadata extensions</Description>
 	  <IsPackable>true</IsPackable>
@@ -13,8 +13,8 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="XFrame.Aggregates" Version="7.0.4" />
-		<PackageReference Include="XFrame.DomainContainers" Version="7.0.0" />
+		<PackageReference Include="XFrame.Aggregates" Version="9.0.0" />
+		<PackageReference Include="XFrame.DomainContainers" Version="9.0.0" />
 	</ItemGroup>
 
 	<Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
